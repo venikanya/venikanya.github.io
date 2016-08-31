@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <style>
+        #progress {
+			height: 10px;
+			background-color: yellow;
+			-webkit-animation: progressBar 3s ease-in-out;
+			-webkit-animation-fill-mode:both; 
+			-moz-animation: progressBar 3s ease-in-out;
+			-moz-animation-fill-mode:both; 
+		}
+		@-webkit-keyframes progressBar {
+		  0% { width: 0; }
+		  100% { width: 100%; }
+		}
+		@-moz-keyframes progressBar {
+		  0% { width: 0; }
+		  100% { width: 100%; }
+		}
+      </style>
+  </head>
+  <body>
+  <h1>A progress bar which gets filled from 0% to 100% in 3s</h1>
+      <div id="progress"></div>
+  </body>
+</html>
